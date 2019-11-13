@@ -1,18 +1,23 @@
 // https://www.w3resource.com/javascript-exercises/fundamental/javascript-fundamental-exercise-11.php
 //1.Write a JavaScript program to generate a random color when a button is clicked (using es6)
-function colorChange() {
-    let hexColors = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e"];
-    let newColor = "#";
+const Colorbutton = document.getElementsByTagName('button')[0];
+Colorbutton.addEventListener('click', () => {
+    document.body.style.backgroundColor = colors();
+});
 
-    for (let i = 0; i <6; i++){
-        let x = Math.round(Math.random()*14);
-        var y = hexColors[x];
-        newColor +=y
+function colors() {
+    let colorArray = [];
+
+    for(let i =0; i < 3 ; i++){
+        colorArray.push(Math.floor(Math.random() * (255 - 0) + 0));
     }
-    // document.getElementById('#color').style.backgroundColor = newColor;
-    // document.getElementById('#colors').innerHTML = newColor;
+    // rgb -> hex
+    let color = colorArray
+        .map( x => x.toString(16))
+        .join('');
+
+    return `#${color}`;
 }
-colorChange();
 
 
 //got the api from this website:
