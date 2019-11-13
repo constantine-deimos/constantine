@@ -1,16 +1,23 @@
 // https://www.w3resource.com/javascript-exercises/fundamental/javascript-fundamental-exercise-11.php
-//1.Write a JavaScript program to generate a random hexadecimal color code. (using es6)
+//1.Write a JavaScript program to generate a random color when a button is clicked (using es6)
+function colorChange() {
+    let hexColors = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e"];
+    let newColor = "#";
 
-
-
-//https://www.w3resource.com/javascript-exercises/fundamental/javascript-fundamental-exercise-56.php
-//2. Write a JavaScript program to check if all elements in a given array are equal or not.
-
+    for (let i = 0; i <6; i++){
+        let x = Math.round(Math.random()*14);
+        var y = hexColors[x];
+        newColor +=y
+    }
+    // document.getElementById('#color').style.backgroundColor = newColor;
+    // document.getElementById('#colors').innerHTML = newColor;
+}
+colorChange();
 
 
 //got the api from this website:
 //https://www.programmableweb.com/api/ron-swanson-quotes
-//make a random quote generator (refactor later)
+//2.make a random quote generator (refactor later)
     //link to the ron api
 
 const url = 'https://ron-swanson-quotes.herokuapp.com/v2/quotes';
