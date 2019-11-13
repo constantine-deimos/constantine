@@ -1,7 +1,8 @@
 // https://www.w3resource.com/javascript-exercises/fundamental/javascript-fundamental-exercise-11.php
 //1.Write a JavaScript program to generate a random color when a button is clicked (using es6)
-const Colorbutton = document.getElementsByTagName('button')[0];
+const Colorbutton = document.getElementsByTagName('button')[1];
 Colorbutton.addEventListener('click', () => {
+    //set the color of the body to colors (which
     document.body.style.backgroundColor = colors();
 });
 
