@@ -1,11 +1,13 @@
 // https://www.w3resource.com/javascript-exercises/fundamental/javascript-fundamental-exercise-11.php
 //1.Write a JavaScript program to generate a random color when a button is clicked (using es6)
+    //target the second button using [1]
 const Colorbutton = document.getElementsByTagName('button')[1];
 Colorbutton.addEventListener('click', () => {
-    //set the color of the body to colors (which
+    //set the color of the body to colors (which calls the function colors
     document.body.style.backgroundColor = colors();
 });
 
+//get a random color function
 function colors() {
     let colorArray = [];
 
@@ -29,7 +31,7 @@ function colors() {
 const url = 'https://ron-swanson-quotes.herokuapp.com/v2/quotes';
 const quoteDiv = document.getElementById("randomQuote");
 const button = document.querySelector("#quoteBtn");
-var currentQuote = '';
+let currentQuote = '';
 
 
 
