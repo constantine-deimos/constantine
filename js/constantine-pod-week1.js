@@ -40,7 +40,7 @@ function generateQuote() {
     fetch(url)
 
     //quotes.json will convert non-objects like null and undefined to valid json
-         //essentially thats what the then is saying:
+         //essentially that's what the then is saying:
                 //function(res){
                     // return res.json();
                 // }
