@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roger's Labs</title>
+</head>
+<style>
+
+    body{
+        margin: 1rem;
+        border: 1px solid darkorange;
+        padding: 2rem;
+        height: 95vh;
+
+    }
+    .container{
+        padding-top: 2rem;
+        justify-content: center;
+    }
+
+    #submit, #submitTwo{
+        background-color: lightblue;
+        border: 1px solid darkorange;
+        border-radius: 5%;
+        padding: 5px;
+        margin-bottom: 5rem;
+
+    }
+    #color, #js{
+        border: 1px solid darkorange;
+        border-radius: 5%;
+        padding: 5px;
+        width: 30vw;
+    }
+    #submitTwo{
+
+    }
+
+
+</style>
+<body>
+<div>
+
+<h1>Roger's Labs</h1>
+<hr>
+</div>
+<div class="container">
+
+<form action="">
+    <input class="push" id="color" name="color" type="text" placeholder="enter color">
+    <button id="submit" class="push">Click to change background</button>
+</form>
+    <form action="">
+        <input class="pushTwo" id="js" name="number" type="text" placeholder="enter number between one and ten">
+        <button id="submitTwo" class="pushTwo">click</button>
+    </form>
+</div>
+<h2></h2>
+
+<script src="jquery-2.2.4.js"></script>
+<script src="roger-js.js"></script>
+</body>
+</html>
