@@ -33,19 +33,3 @@ $('#submitTwo').click(function (e) {
     }
 });
 
-// var z = parseInt(prompt("how long would you like your triangle?"));
-// var x,y,chr;
-// function pyramid(z) {
-//
-//     for(x=1; x <= z + 1 ; x++)
-//     {
-//         for (y=1; y < x; y++)
-//         {
-//             chr=chr+("*");
-//         }
-//         console.log(chr);
-//         chr='';
-//     }
-// }
-//
-// console.log(pyramid(z));
