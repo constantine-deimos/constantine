@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Roger's Labs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <style>
 
-    body{
+    body {
         margin: 1rem;
         border: 1px solid darkorange;
-        padding: 2rem;
+        padding: 1rem;
         height: 195vh;
 
     }
-    .container{
-        padding-top: 2rem;
-        justify-content: center;
+
+    .container {
+        /*padding-top: 2rem;*/
+        /*margin: auto;*/
+        /*justify-content: center;*/
     }
 
-    #submit, #submitTwo{
+    #submit, #submitTwo {
         background-color: lightblue;
         border: 1px solid darkorange;
         border-radius: 5%;
@@ -26,13 +30,15 @@
         margin-bottom: 5rem;
 
     }
-    #color, #js{
+
+    #color, #js {
         border: 1px solid darkorange;
         border-radius: 5%;
         padding: 5px;
-        width: 30vw;
+        /*width: 30vw;*/
     }
-    #submitTwo{
+
+    #submitTwo {
 
     }
 
@@ -41,21 +47,64 @@
 <body>
 <div>
 
-<h1>Roger's Labs</h1>
-<hr>
+    <h1>Roger's Labs</h1>
+    <hr>
 </div>
-<div class="container">
+<div class="container d-flex row-1">
+    <div class="col-6 d-flex justify-content-between">
+        <div class="d-flex ">
+            <form action="">
+                <input class="push" id="color" name="color" type="text" placeholder="background color">
+                <button id="submit" class="push">Click</button>
+            </form>
+        </div>
+    </div>
+    <div class="col-6 d-flex">
+        <div class="d-flex row-1">
+            <form action="">
+                <input class="pushTwo" id="js" name="number" type="text" placeholder="number between 1-10">
+                <button id="submitTwo" class="pushTwo">Click</button>
+            </form>
+        </div>
+    </div>
 
-<form action="">
-    <input class="push" id="color" name="color" type="text" placeholder="enter color">
-    <button id="submit" class="push">Click to change background</button>
-</form>
-    <form action="">
-        <input class="pushTwo" id="js" name="number" type="text" placeholder="enter number between one and ten">
-        <button id="submitTwo" class="pushTwo">click</button>
-    </form>
 </div>
-<h2></h2>
+<div class="">
+    <h2></h2>
+</div>
+<!--<div class="containerTwo d-flex row-1 m-0">-->
+<!--    <div class="col-4 d-flex">-->
+<!--        <div class="row-1">-->
+<!--            <form action="">-->
+<!--                <input class="push" id="color" name="color" type="text" placeholder="background color">-->
+<!--                <button id="submit" class="push">Click</button>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="col-4 d-flex">-->
+<!--        <div class="d-flex row-1">-->
+<!--            <form action="">-->
+<!--                <input class="pushTwo" id="js" name="number" type="text" placeholder="number between 1-10">-->
+<!--                <button id="submitTwo" class="pushTwo">Click</button>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="col-4">-->
+<!--        <h2></h2>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 <script src="jquery-2.2.4.js"></script>
 <script src="roger-js.js"></script>
